@@ -7,28 +7,30 @@ ser impresso o maior e o menor elemento do vetor.
 
 int main()
 {
-    int vet[10], i, maior, menor;
+    int vet[5], i, maior, menor;
     
-    for(i=1;i<=10;i++)
+    for(i=1;i<=5;i++)
     {
         printf("Inserir a %dª posiçao: ",i);
         scanf("%d",&vet[i]);
+    }
         
-        maior = 0;
-        menor = 0;
+    
         
-        if(maior < vet[i])
+    for(i=1;i<=5;i++)
+    {
+        if(vet[i] < menor)
         {
-            vet[i] = maior;
+           menor = vet[i];
         }
-        if(menor > vet[i])
+        if(vet[i] > maior)
         {
-            vet[i] = menor;
+            maior = vet[i];
         }
     }
-    printf("O menor numero é:",menor);
+    printf("O menor numero é: %d",menor);
     printf("\n");
-    printf("O maior número é:",maior);
+    printf("O maior número é: %d",maior);
 
     return 0;
 }
