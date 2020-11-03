@@ -1,36 +1,34 @@
-/******************************************************************************
-6. Fac¸a um programa que receba do usuario um vetor com 10 posic¸ ´ oes. Em seguida dever ˜ a´
-ser impresso o maior e o menor elemento do vetor.
-*******************************************************************************/
-
+#include <conio.h>
 #include <stdio.h>
-
+ 
+ 
 int main()
 {
-    int vet[5], i, maior, menor;
-    
-    for(i=1;i<=5;i++)
+    int vet[10],i,n,menor,maior;
+ 
+    printf("Digite 10 números.\n");
+    for(i=1; i<=10; i++)
     {
-        printf("Inserir a %dª posiçao: ",i);
         scanf("%d",&vet[i]);
     }
-        
+ 
+    vet[0]=menor;
+    maior=0;
     
-        
-    for(i=1;i<=5;i++)
+    for(i=1; i<=10; i++)
     {
-        if(vet[i] < menor)
+        if(menor>vet[i])
         {
-           menor = vet[i];
+		    menor=vet[i];   
         }
-        if(vet[i] > maior)
-        {
-            maior = vet[i];
-        }
+		if(maior<vet[i])
+		{
+		    maior=vet[i];
+		}    
     }
-    printf("O menor numero é: %d",menor);
-    printf("\n");
-    printf("O maior número é: %d",maior);
-
+     printf("menor: %d",menor);
+          printf("\nmaior: %d",maior);
+ 
+ 
     return 0;
 }
