@@ -28,8 +28,8 @@ int main()
     {
         printf("A soma é %d",vet[x]+vet[y]);
     }
-    else;
+    else{
     printf("Deve ser um intervalo entre 1 e 8");
-
+    }
     return 0;
 }

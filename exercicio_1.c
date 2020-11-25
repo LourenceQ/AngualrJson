@@ -6,12 +6,6 @@ O programa deve executar os seguintes passos:
 A[0], A[1] e A[5] do vetor e mostre na tela esta soma.
 (c) Modifique o vetor na posic¸ao 4, atribuindo a esta posic¸ ˜ ao o valor 100. ˜
 (d) Mostre na tela cada valor do vetor A, um em cada linha.
-
-
-OBS: quando o programa inicia o vetor original é A[6]={1, 0, 5, -2, -5, 7};
-ao longo da execução do código a posição A[3] é substituida por 100 e o processo termina.
-Quando o algoritmo é executado novamente ele precia ser iniciado com o valor atualizado ?
-Para isso ser feito é preciso criar funções que armazenem esse valor e passem esse parametro atualizado.
 *******************************************************************************/
 
 #include <stdio.h>

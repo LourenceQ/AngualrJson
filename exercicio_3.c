@@ -21,6 +21,7 @@ int main()
         
         B[i] = A[i] * A[i];
     }
+    
     printf("Vetor A\n");
     for(i=1; i<=10; i++)
     {
@@ -30,11 +31,11 @@ int main()
     printf("\n");
     
     printf("Vetor B\n");
+    
     for(i=1; i<=10; i++)
     {
         printf("Posição %d = %.2f\n",i,B[i]);
     }
-    
     
     return 0;
 }

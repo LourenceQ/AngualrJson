@@ -4,7 +4,7 @@ int main()
 {
     int vet[6], i;
     for(i=1;i<=6;i++){
-        printf("Informe o %dº numero:",i);
+        printf("Informe o %d? numero:",i);
         scanf("%d",&vet[i]);
     }
     

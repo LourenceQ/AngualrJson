@@ -46,7 +46,7 @@ int main()
             // IMPRIMI O VETOR
             for(i=1;i<=6;i++)
             {
-                printf("%dº - %d\n",i,vet[i]);
+                printf("%dº = %d\n",i,vet[i]);
             }
         }
     }

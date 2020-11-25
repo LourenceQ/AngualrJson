@@ -26,7 +26,7 @@ int main()
 		  {
       		if(vet[a]==vet[b])
       		{
-      			   printf("%d foi repetido! Na posição %d\n",vet[a],a);     	  
+      			   printf("%d foi repetido nas posições %d e %d\n",vet[a],b,a);     	  
       		}
 		  }
 	  }

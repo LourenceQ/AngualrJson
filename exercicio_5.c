@@ -6,7 +6,7 @@
 
 int main()
 {
-    int vet[10], i, par, impar;
+    int vet[10], i, par=0, impar=0;
     
     for(i=1;i<=10;i++)
     {
@@ -18,15 +18,10 @@ int main()
     {
         if(vet[i]%2 == 0)
         {
-            printf("O número %d é par\n",i);
+            par++;
         }
     }
-    for(i=1;i<=10;i++)
-    {
-        if(vet[i]%2 != 0)
-        {
-            printf("O número %d é ímpar\n",i);
-        }
-    }
+    
+    printf("Existem %d valores pares nesse vetor",par);
     return 0;
 }

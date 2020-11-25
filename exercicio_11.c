@@ -2,22 +2,26 @@
 
 int main()
 {
-    int i, zero=0;
-    float vet[10], soma;
+    int i, cont=0, soma;
+    int vet[10];
     
     for(i=1;i<=10;i++){
         
         printf("Informe o %dº numero:",i);
-        scanf("%f",&vet[i]);
+        scanf("%d",&vet[i]);
+    }    
+        for(i=1;i<=10;i++){
         
-        if(vet[i]==0){
-            zero = zero + 1;
+            if(vet[i]<0){
+                cont++;
+            }
+            if(vet[i] > 0){
+                soma = soma + vet[i];
+            
+            }
+        
         }
-        if(vet[i] >= 0){
-            soma = soma + vet[i];
-        }
-    }
     
-    printf("A quantidade de números zeros é: %d",zero);
-    printf("\nA soma dos números positivos  é: %.2f",soma);
+    printf("A quantidade de números abaixo de zero é: %d",cont);
+    printf("\nA soma dos números positivos  é: %.d",soma);
 }
